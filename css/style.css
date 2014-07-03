@@ -107,7 +107,7 @@ ul.nav a:hover {
 /* additional sections */
 #home {
   background: url(../images/berkeley-night-blur-16-9.jpg) no-repeat center center fixed; 
-  display: table;
+  display: inline-block;
   height: auto;
   position: static;
   width: 100%;
@@ -211,7 +211,7 @@ figcaption h3 {
 
 #contact {
   background: url(../images/doe-blur-16-9.jpg) no-repeat center center fixed; 
-  display: table;
+  display: inline-block;
   height: auto;
   position: static;
   width: 100%;
