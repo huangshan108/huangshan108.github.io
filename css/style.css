@@ -232,8 +232,8 @@ figcaption h3 {
 }
 
 .github {
-  max-width: 98px;
-  padding: 1px;
+  max-width: 96px;
+  padding: 2px;
   display: block;
   margin: auto;
 }
@@ -252,6 +252,13 @@ figcaption h3 {
 .wechat-qr {
   max-width: 150px;
   display: inline;
+}
+
+.linkedin {
+  max-width: 98px;
+  padding: 1px;
+  display: block;
+  margin: auto;
 }
 
 .popover {
