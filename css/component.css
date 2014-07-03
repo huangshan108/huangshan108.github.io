@@ -385,6 +385,6 @@
 	}
 	.grid li {
 		width: 100%;
-		min-width: 300px;
+		min-width: 200px;
 	}
 }
