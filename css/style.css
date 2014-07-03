@@ -227,6 +227,12 @@ figcaption h3 {
   margin: auto;
 }
 
+#contact img:hover {
+  opacity: 0.3;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
 .facebook {
   max-width: 100px;
 }
@@ -263,6 +269,10 @@ figcaption h3 {
 
 .popover {
   left: 22% !important;
+}
+
+.popover-content {
+  padding: 1px;
 }
 
 .contact-row {
