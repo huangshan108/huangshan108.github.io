@@ -15,4 +15,13 @@ $(function() {
 
 $('span').tooltip();
 
+$('img[rel=popover]').popover({
+  html: true,
+  trigger: 'click',
+  position: 'relative',
+  content: function () {
+    return '<img src="images/wechat-qr.png" class="wechat-qr">';
+  }
+});
+
 });
