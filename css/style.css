@@ -6,8 +6,12 @@ html, body {
     padding: 0px;
 }
 
-nav, body, #home, #about {
+body, #home, #about {
     overflow-x: hidden;
+}
+
+.light-font {
+  font-weight: 300 !important;
 }
 
 /* padded section */
@@ -106,7 +110,7 @@ ul.nav a:hover {
 
 /* additional sections */
 #home {
-  background: url(../images/berkeley-night-blur-16-9.jpg) no-repeat center center scroll; 
+  background: url(../images/berkeley-night-blur-16-9.jpg) no-repeat center center fixed; 
   display: inline-block;
   height: auto;
   position: static;
@@ -210,7 +214,7 @@ figcaption h3 {
 }
 
 #contact {
-  background: url(../images/doe-blur-16-9.jpg) no-repeat center center scroll; 
+  background: url(../images/doe-blur-16-9.jpg) no-repeat center center fixed; 
   display: inline-block;
   height: auto;
   position: static;
