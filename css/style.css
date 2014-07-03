@@ -294,14 +294,14 @@ figcaption h3 {
 }
 
 .bible-verse {
-  color: black;
-  font-weight: 300;
+  color: #525252;
+  font-weight: 200 !important;
   line-height: 30px;
 }
 
 .bible-source {
-  color: black;
-  font-weight: 300;
+  color: #525252;
+  font-weight: 200 !important;
 }
 
 footer {
