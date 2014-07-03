@@ -4,9 +4,6 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-}
-
-body {
     overflow-x: hidden;
 }
 
@@ -106,7 +103,7 @@ ul.nav a:hover {
 
 /* additional sections */
 #home {
-  background: url(../images/berkeley-night-blur-16-9.jpg) no-repeat center center fixed; 
+  background: url(../images/berkeley-night-blur-16-9.jpg) no-repeat center center scroll; 
   display: inline-block;
   height: auto;
   position: static;
@@ -210,7 +207,7 @@ figcaption h3 {
 }
 
 #contact {
-  background: url(../images/doe-blur-16-9.jpg) no-repeat center center fixed; 
+  background: url(../images/doe-blur-16-9.jpg) no-repeat center center scroll; 
   display: inline-block;
   height: auto;
   position: static;
