@@ -1,4 +1,3 @@
-my-site
-=======
+Please check out my website at
 
-my website
+www.shanhuang.org
