@@ -14,9 +14,6 @@ body {
 .pad-section {
   padding: 50px 0;
 }
-.pad-section img {
-  width: 100%;
-}
 
 .no-padding {
   padding: 0;
@@ -111,7 +108,7 @@ ul.nav a:hover {
 #home {
   background: url(../images/berkeley-night-blur-16-9.jpg) no-repeat center center fixed; 
   display: table;
-  height: 100%;
+  height: auto;
   position: static;
   width: 100%;
   -webkit-background-size: cover;
@@ -147,7 +144,7 @@ ul.nav a:hover {
 }
 
 .about-body {
-  margin: 20px 20px;
+  margin: 25px 20px 80px 20px;
 }
 
 .role-picture-div-padding {
@@ -215,7 +212,7 @@ figcaption h3 {
 #contact {
   background: url(../images/doe-blur-16-9.jpg) no-repeat center center fixed; 
   display: table;
-  height: 800px;
+  height: auto;
   position: static;
   width: 100%;
   -webkit-background-size: cover;
@@ -224,8 +221,66 @@ figcaption h3 {
   background-size: cover;
 }
 
-#contact .panel {
-  opacity: 0.85;
+.image-container {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+#contact img:hover {
+  opacity: 0.3;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.facebook {
+  max-width: 100px;
+}
+
+.github {
+  max-width: 96px;
+  padding: 4px 2px 0 2px;
+  display: block;
+  margin: auto;
+}
+
+.wechat {
+  max-width: 88px;
+  padding: 12px 6px 0px 6px;
+  display: block;
+  margin: auto;
+}
+
+.wechat:hover {
+  cursor: pointer;
+}
+
+.wechat-qr {
+  max-width: 150px;
+  display: inline;
+}
+
+.linkedin {
+  max-width: 98px;
+  padding: 1px;
+  display: block;
+  margin: auto;
+}
+
+.popover {
+  left: 22% !important;
+}
+
+.popover-content {
+  padding: 1px;
+}
+
+.contact-row {
+  margin: 50px 20px;
+}
+
+.contact-col {
+  margin: 70px 0;
 }
 
 .bible-row {
