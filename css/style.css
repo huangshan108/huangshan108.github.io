@@ -111,7 +111,7 @@ ul.nav a:hover {
 #home {
   background: url(../images/berkeley-night-blur-16-9.jpg) no-repeat center center fixed; 
   display: table;
-  height: 100%;
+  height: auto;
   position: static;
   width: 100%;
   -webkit-background-size: cover;
@@ -147,7 +147,7 @@ ul.nav a:hover {
 }
 
 .about-body {
-  margin: 20px 20px;
+  margin: 25px 20px 80px 20px;
 }
 
 .role-picture-div-padding {
@@ -215,13 +215,32 @@ figcaption h3 {
 #contact {
   background: url(../images/doe-blur-16-9.jpg) no-repeat center center fixed; 
   display: table;
-  height: 800px;
+  height: auto;
   position: static;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.facebook {
+  max-width: 100px;
+  display: block;
+  margin: auto;
+}
+
+.github {
+  max-width: 100px;
+  display: block;
+  margin: auto;
+}
+
+.wechat {
+  max-width: 96px;
+  padding: 3px;
+  display: block;
+  margin: auto;
 }
 
 #contact .panel {
