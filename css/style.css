@@ -93,6 +93,10 @@ nav li {
   border: none;
 }
 
+.navbar {
+  margin-bottom: 0;
+}
+
 ul.nav a:hover { 
   color: black !important;
   background-color: white !important;
