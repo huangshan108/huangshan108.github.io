@@ -274,7 +274,7 @@ figcaption h3 {
 }
 
 .popover {
-  left: 22% !important;
+  left: calc(50% - 77px) !important;
 }
 
 .popover-content {
@@ -340,7 +340,7 @@ and (max-device-width : 1024px) {
 }
 }
 
-/* Special media queries for iPhone/iPod devices */
+/* Special media queries for iPhone/iPod 4-inches devices */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 568px) 
@@ -372,5 +372,35 @@ and (max-device-width : 568px)
 }
 }
 
+/* Special media queries for iPhone/iPod 3.5-inches devices */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+{
+#home {
+  background: url(../images/berkeley-night-blur-16-9.jpg) no-repeat center center; 
+  display: inline-block;
+  height: auto;
+  position: static;
+  width: 100%;
+  background-attachment: scroll !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
 
+#contact {
+  background: url(../images/doe-blur-16-9.jpg) no-repeat center center; 
+  display: inline-block;
+  height: auto;
+  position: static;
+  width: 100%;
+  background-attachment: scroll !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+}
  
