@@ -297,6 +297,10 @@ figcaption h3 {
   padding: 1px;
 }
 
+.contact-row-email {
+  margin: 40px 20px 15px 20px;
+}
+
 .contact-row {
   margin: 40px 20px;
 }
