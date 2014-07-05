@@ -10,6 +10,13 @@ body, #home, #about {
     overflow-x: hidden;
 }
 
+h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .light-font {
   font-weight: 300 !important;
 }
@@ -243,6 +250,11 @@ figcaption h3 {
   transition-duration: 0.4s;
 }
 
+.email {
+  max-width: 100px;
+  padding: 15px;
+}
+
 .facebook {
   max-width: 100px;
 }
@@ -286,11 +298,17 @@ figcaption h3 {
 }
 
 .contact-row {
-  margin: 50px 20px;
+  margin: 40px 20px;
 }
 
 .contact-col {
-  margin: 70px 0;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .contact-col {
+    margin: 50px 0;
+}
 }
 
 .bible-row {
