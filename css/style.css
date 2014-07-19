@@ -317,6 +317,89 @@ figcaption h3 {
   margin: 20px 0;
 }
 
+.send-me-message {
+  display: table-cell; 
+  vertical-align: middle;
+  font-size: 20pt;
+}
+
+.send-me-message span {
+
+}
+
+.form-control {
+  /*opacity: 0.3;*/
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: none;
+  margin-bottom: 10px;
+  border-color: transparent;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: transparent;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+form .btn {
+  color: rgba(255, 255, 255, 0.7);
+  /*opacity: 0.3;*/
+  box-shadow: none;
+  margin-bottom: 10px;
+  border-color: transparent;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+form .btn:hover {
+  color: rgba(0, 0, 0, 0.7);
+  /*opacity: 0.3;*/
+  box-shadow: none;
+  margin-bottom: 10px;
+  border-color: transparent;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.glyphicon {
+  opacity: 0.5;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: white; 
+  opacity: 0.5;
+}
+.form-control:-moz-placeholder {
+  color: white; 
+  opacity: 0.5;
+}
+.form-control::-moz-placeholder {
+  color: white; 
+  opacity: 0.5;
+}
+.form-control:-ms-input-placeholder {
+  color: white; 
+  opacity: 0.5;
+}
+
+.contact-divider {
+  opacity: 0.5;
+}
+
+#entry_1199628582, #entry_1677004104, #entry_213468306{
+    color: rgba(255, 255, 255, 1);
+}
+
 @media (max-width: 768px) {
 .contact-row {
   margin: 25px 20px;
