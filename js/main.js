@@ -28,10 +28,8 @@ $('img[rel=popover]').popover({
 
 
 $(document).ready(function() {
-  // setPosition();
   $('#sent').hide();
   $('#sent').center();
-  // $('#sent').fadeIn("slow").delay(2000).fadeOut("slow");
 });
 
 $(window).resize(function() {
