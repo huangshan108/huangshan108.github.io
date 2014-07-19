@@ -6,7 +6,7 @@ html, body {
     padding: 0px;
 }
 
-body, #home, #about {
+body, #home, #about, #contact {
     overflow-x: hidden;
 }
 
