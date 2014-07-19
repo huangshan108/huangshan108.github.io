@@ -17,12 +17,16 @@ $('span').tooltip();
 
 $('img[rel=popover]').popover({
   html: true,
+  container: 'body',
   trigger: 'click',
   position: 'relative',
   content: function () {
     return '<img src="images/wechat-qr.png" class="wechat-qr">';
   }
 });
+
+$('.wechat').trigger('click');
+$('.wechat').trigger('click');
 
 });
 

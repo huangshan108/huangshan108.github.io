@@ -298,7 +298,7 @@ figcaption h3 {
 }
 
 .popover {
-  left: calc(50% - 77px) !important;
+  /*left: calc(50% - 77px) !important;*/
 }
 
 .popover-content {
