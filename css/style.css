@@ -213,6 +213,14 @@ figcaption h3 {
   border: 5px solid black;
 }
 
+#engineer-wedgit figcaption {
+  background: #306d9f;
+}
+
+#cook-wedgit figcaption {
+  background: #525252;
+}
+
 #services .glyphicon {
   border: 2px solid #FFFFFF;
   border-radius: 50%;
