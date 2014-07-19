@@ -136,17 +136,25 @@
     </div>
   </div>
 
+<div id="sent" class="alert alert-success" role="alert">
+      <strong>Thank you!</strong> Your message has been sent.
+</div>
+
+
+
   <div id="contact" class="pad-section">
     <div class="container">
       <div class="row">
         <div class="col-md-4" style="display: table; height: 300px; overflow: hidden;">
           <div class="send-me-message">
-            You can send me a message for any purpose at all!
+            You can send me a message for any purpose at all and I will reponse within 24 hours!
           </div>
         </div>
         <div class="col-md-8">
-          <form action="https://docs.google.com/forms/d/1ANQGdolIurwS-mRhERbRm25Vcz4bDpdyLj7LS_u8ujk/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
-
+            <script type="text/javascript">var submitted=false;</script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
+            onload="if(submitted) {$('#sent').fadeIn('slow').delay(2000).fadeOut('slow'); $('#entry_1199628582, #entry_1677004104, #entry_213468306').val('');}"></iframe>
+            <form action="https://docs.google.com/forms/d/1ANQGdolIurwS-mRhERbRm25Vcz4bDpdyLj7LS_u8ujk/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
             <div class="form-group has-feedback">
             <input type="text" name="entry.1199628582" value="" class="ss-q-short form-control" id="entry_1199628582" dir="auto" aria-label="name  " aria-required="true" required="" title="" placeholder="Your Name">
             <span class="glyphicon glyphicon-user form-control-feedback" style="top: 0;"></span>
@@ -200,46 +208,6 @@
       <div class="col-md-1"></div>
     </div>
   </div>
-
-
-
-  <!-- fourth section - Information -->
-<!--   <div id="contact" class="pad-section">
-    <div class="container">
-      <div class="row">
-        <h3 class="center light-font">The best way to reach me is via email. You can email me for any purpose at all.</h3>
-        <div class="contact-row-email">
-          <div class="image-container">
-            <a href="mailto:shanhuang108@gmail.com?Subject=Hi%20Shan" target="_top"><img src="images/email.png" class="email"></a>
-          </div>
-        </div>
-      </div>
-        <h3 class="center light-font">You can also find me via</h3>
-      <div class="row contact-row">
-        <div class="col-md-3 col-sm-3 contact-col">
-          <div class="image-container">
-            <a href="https://www.facebook.com/huangshan108" target="_blank"><img src="images/facebook.png" class="facebook"></a>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-3 contact-col">
-          <div class="image-container">
-            <a href="https://github.com/huangshan108" target="_blank"><img src="images/github.png" class="github"></a>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-3 contact-col">
-          <div class="image-container">
-            <a href="https://www.linkedin.com/pub/shan-huang/8a/aa2/845" target="_blank"><img src="images/linkedin.png" class="linkedin"></a>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-3 contact-col">
-          <div class="image-container">
-            <img src="images/wechat.png" class="wechat" rel="popover" data-placement="bottom">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <!-- /fourth section -->
 
   <!-- fifth section - About -->
   <div id="bible" class="pad-section">

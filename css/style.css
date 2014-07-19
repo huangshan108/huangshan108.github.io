@@ -429,6 +429,14 @@ footer {
   padding: 20px 0;
 }
 
+#sent {
+  position: fixed;
+  top: 10%;
+  z-index: 9999;
+  margin-bottom: 0;
+  /*left: 50%;*/
+}
+
 
 /* Special media queries for iPad devices */
 @media only screen 

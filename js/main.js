@@ -25,3 +25,23 @@ $('img[rel=popover]').popover({
 });
 
 });
+
+
+$(document).ready(function() {
+  // setPosition();
+  $('#sent').hide();
+  $('#sent').center();
+  // $('#sent').fadeIn("slow").delay(2000).fadeOut("slow");
+});
+
+$(window).resize(function() {
+  // setPosition();
+  $('#sent').center();
+});
+
+jQuery.fn.center = function () {
+    this.css("position","fixed");
+    this.css("top", "10%");
+    this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+    return this;
+}
