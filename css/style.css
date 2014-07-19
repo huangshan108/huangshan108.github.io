@@ -323,8 +323,9 @@ figcaption h3 {
   font-size: 20pt;
 }
 
-.send-me-message span {
-
+.form-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .form-control {
