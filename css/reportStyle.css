@@ -38,7 +38,7 @@ button {
   font-weight: 500;
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid white;
-  margin: 40px;
+  margin: 60px 40px;
 }
 
 button:active,
