@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
 	//hide timeline blocks which are outside the viewport
 	$timeline_block.each(function(){
 		if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
-			$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+			$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden').removeClass('bounce-in');
 		}
 	});
 
@@ -15,6 +15,12 @@ jQuery(document).ready(function($){
 				$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
 			}
 		});
+		$timeline_block.each(function(){
+			if( $(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+				$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden').removeClass('bounce-in');
+		}
+	});
+
 	});
 });
 
