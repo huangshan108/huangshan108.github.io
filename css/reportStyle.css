@@ -17,8 +17,9 @@ html * {
 body {
   font-size: 100%;
   font-family: "Arial", Arial;
-  color: black;
+  color: #34495E;
   background-color: #2C3E50;
+  overflow-x: hidden;
 }
 
 a {
@@ -34,6 +35,10 @@ img {
 h1, h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
+}
+
+li {
+  line-height: 23px;
 }
 
 /* -------------------------------- 
@@ -247,7 +252,6 @@ header h1 {
   background: white;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 #d7e4ed;
 }
 .cd-timeline-content:after {
   content: "";
@@ -302,7 +306,7 @@ header h1 {
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
     margin-left: 0;
-    padding: 1.6em;
+    padding: 10px 25px;
     width: 45%;
   }
   .cd-timeline-content::before {
