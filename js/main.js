@@ -30,6 +30,18 @@ $('.wechat').trigger('click');
 
 });
 
+$(document).ready(function() {
+  setHeights();
+});
+
+$(window).resize(function() {
+  setHeights();
+});
+
+setHeights = function() {
+  var windowHeight = $(window).height();
+  $("#home").height(windowHeight);
+};
 
 $(document).ready(function() {
   $('#sent').hide();
