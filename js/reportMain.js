@@ -29,6 +29,21 @@ jQuery(document).ready(function($){
 	});
 });
 
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
 $(document).ready(function() {
 	setHeights();
 });
@@ -40,5 +55,5 @@ $(window).resize(function() {
 setHeights = function() {
 	var windowHeight = $(window).height();
 	$("header").height(windowHeight);
-	$("header").css('lineHeight', windowHeight - 50 + 'px');
+	$("header h1").css('margin-top', windowHeight / 3 + 'px');
 };
