@@ -1,3 +1,5 @@
+var colorArray = [ '#156AEC', '#D9442F', '#FFB800', '#02A05B' ]; //blue red orange green
+
 jQuery(document).ready(function($){
 	var $timeline_block = $('.cd-timeline-block');
 
@@ -12,14 +14,17 @@ jQuery(document).ready(function($){
 	$(window).on('scroll', function(){
 		$timeline_block.each(function(){
 			if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+				var index = Math.floor(Math.random() * 4);
+				$(this).find('.cd-timeline-img').css('background', colorArray[index]);
+				$(this).find('.cd-timeline-content').css('background', colorArray[Math.floor(Math.random() * 4)]);
 				$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
 			}
 		});
 		$timeline_block.each(function(){
 			if( $(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
 				$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden').removeClass('bounce-in');
-		}
-	});
+			}
+		});
 
 	});
 });
