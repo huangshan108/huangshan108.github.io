@@ -44,6 +44,9 @@ $(window).resize(function() {
 
 setHeights = function() {
   var windowHeight = $(window).height();
+  if (windowHeight < 600) {
+    windowHeight = 600;
+  };
   $("#home").height(windowHeight);
 };
 
