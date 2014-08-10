@@ -31,11 +31,15 @@ $('.wechat').trigger('click');
 });
 
 $(document).ready(function() {
+  $('#sent').hide();
+  $('#sent').center();
   setHeights();
+  setInterval ('cursorAnimation()', 800);
 });
 
 $(window).resize(function() {
   setHeights();
+  $('#sent').center();
 });
 
 setHeights = function() {
@@ -43,19 +47,34 @@ setHeights = function() {
   $("#home").height(windowHeight);
 };
 
-$(document).ready(function() {
-  $('#sent').hide();
-  $('#sent').center();
-});
-
-$(window).resize(function() {
-  // setPosition();
-  $('#sent').center();
-});
 
 jQuery.fn.center = function () {
     this.css("position","fixed");
     this.css("top", "10%");
     this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
     return this;
+};
+
+var str = "Do Creative Things That Matter",
+    i = 0,
+    isTag,
+    text;
+
+(function type() {
+    text = str.slice(0, ++i);
+    document.getElementById('self-intro').innerHTML = text;
+    if (text === str) return;
+    var char = text.slice(-1);
+    if( char === '<' ) isTag = true;
+    if( char === '>' ) isTag = false;
+    if (isTag) return type();
+    setTimeout(type, 80);
+}());
+
+function cursorAnimation() {
+    $('#cursor').animate({
+        opacity: 0
+    }, 'fast', 'linear').animate({
+        opacity: 1
+    }, 'fast', 'linear');
 }
