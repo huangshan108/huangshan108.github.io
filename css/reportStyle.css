@@ -55,6 +55,10 @@ button:focus {
   transition:.3s;
 }
 
+.center {
+  text-align: center;
+}
+
 /* -------------------------------- 
 
 Modules - reusable parts of our design
@@ -492,4 +496,10 @@ header h1 {
     -o-transform: translateX(0);
     transform: translateX(0);
   }
+}
+
+footer {
+  color: #95A5A6;
+  background-color: #34495E;
+  padding: 20px;
 }
