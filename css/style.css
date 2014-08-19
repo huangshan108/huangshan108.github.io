@@ -24,6 +24,11 @@ h3 {
   padding-right: 15px;
 }
 
+hr {
+  text-align: center;
+  width: 80%;
+}
+
 .light-font {
   font-weight: 300 !important;
 }
