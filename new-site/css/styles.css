@@ -1,4 +1,7 @@
 /*General Style*/
+body {
+	overflow-y: scroll;
+}
 div, section {
 	padding: 0px;
 }
