@@ -12,7 +12,9 @@ $(document).ready(function() {
 // on resize
 $(window).resize(function() {
   setHeights();
-  thumbnailWidthAdjustment();
+  heightAdjustment("#signature-dishes .section-container");
+  thumbnailWidthAdjustment("#projects");
+  thumbnailWidthAdjustment("#signature-dishes");
 });
 
 // nav clicker hander
@@ -35,7 +37,7 @@ $(".projects-navbar").click(function() {
 	$("section").addClass("display-none");
 	$("#projects").removeClass("display-none");
 	heightAdjustment("#projects .section-container");
-	thumbnailWidthAdjustment();
+	thumbnailWidthAdjustment("#projects");
 });
 $(".signature-dishes-navbar").click(function() {
 	$(".sh-navbar").removeClass("selected");
@@ -43,7 +45,7 @@ $(".signature-dishes-navbar").click(function() {
 	$("section").addClass("display-none");
 	$("#signature-dishes").removeClass("display-none");
 	heightAdjustment("#signature-dishes .section-container");
-	thumbnailWidthAdjustment();
+	thumbnailWidthAdjustment("#signature-dishes");
 });
 $("#find-dishes").click(function() {
 	$(".sh-navbar").removeClass("selected");
@@ -51,7 +53,7 @@ $("#find-dishes").click(function() {
 	$("section").addClass("display-none");
 	$("#signature-dishes").removeClass("display-none");
 	heightAdjustment("#signature-dishes .section-container");
-	thumbnailWidthAdjustment();
+	thumbnailWidthAdjustment("#signature-dishes");
 });
 $(".contact-me-navbar").click(function() {
 	$(".sh-navbar").removeClass("selected");
@@ -88,19 +90,19 @@ heightAdjustment = function(selecter) {
 	};
 }
 
-thumbnailWidthAdjustment = function() {
-	var galleryWidth = $(".gallery").width();
+thumbnailWidthAdjustment = function(selecter) {
+	var galleryWidth = $(selecter + " .gallery").width();
 	var windowWidth = $(window).width();
 	if (windowWidth < 900) {
 		var width = (galleryWidth - 40) / 2;
-		$(".sh-thumbnail").width(width).height(width / 1.6);
-		$(".thumbnail-label").width(width).css({
+		$(selecter + " .sh-thumbnail").width(width).height(width / 1.6);
+		$(selecter + " .thumbnail-label").width(width).css({
 			"margin-top": width / 3
 		});
 	} else {
 		var width = (galleryWidth - 50) / 3;
-		$(".sh-thumbnail").width(width).height(width / 1.6);
-		$(".thumbnail-label").width(width).css({
+		$(selecter + " .sh-thumbnail").width(width).height(width / 1.6);
+		$(selecter + " .thumbnail-label").width(width).css({
 			"margin-top": width / 3
 		});
 	}
