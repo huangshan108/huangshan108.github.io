@@ -56,6 +56,7 @@ section .detail {
 	line-height: 1.5;
 	font-size: 1.1em;
 	color: rgba(255,255,255,0.7);
+	margin-bottom: 20px;
 }
 section.about-me #find-dishes {
 	text-decoration: underline;
@@ -63,6 +64,60 @@ section.about-me #find-dishes {
 section.about-me #find-dishes:hover {
 	cursor: pointer;
 }
+ul.gallery {
+	list-style: none;
+	padding: 0px;
+}
+ul.gallery li {
+	display: inline-block;
+}
+ul.gallery li img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+section .sh-thumbnail {
+	padding: 0px;
+	border: 0px;
+	margin: 5px;
+	width: 30%;
+}
+section .sh-thumbnail:hover {
+	cursor: pointer;
+}
+section .sh-thumbnail .overlay {
+	color: rgba(255,255,255.0.5);
+	font-size: 2em;
+	background-color: rgba(0,0,0,0.8);
+	height: inherit;
+	width: inherit;
+	position: absolute;
+	text-align: center;
+	padding-top: 30px;
+	display: none;
+}
+section .sh-thumbnail .thumbnail-label {
+	color: white;
+	display: table-cell;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+}
+section .sh-thumbnail .thumbnail-label .thumbnail-label-text {
+	padding: 10px;
+}
+section .sh-thumbnail.postman {
+	background: url(../images/postman.png) no-repeat center center;
+	background-size: cover;
+}
+section .sh-thumbnail.sliding-puzzle-solver {
+	background: url(../images/postman.png) no-repeat center center;
+	background-size: cover;
+}
+section .sh-thumbnail.dv-router {
+	background: url(../images/postman.png) no-repeat center center;
+	background-size: cover;
+}
+
 /*right*/
 #right {
 	position: fixed;
