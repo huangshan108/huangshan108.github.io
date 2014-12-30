@@ -3,12 +3,25 @@ div, section {
 	padding: 0px;
 }
 
-.right.no-padding, .left.no-padding {
+#right.no-padding, #left.no-padding {
 	padding: 0px;
+}
+.display-none {
+	display: none;
+}
+
+/* Fonts*/
+@font-face {
+	font-family: "Courier New";
+	src: url(../fonts/courier-new-webfont.woff) format("woff");
+}
+@font-face {
+	font-family: "Lato Thin";
+	src: url(../fonts/Lato-Thin.woff) format("woff");
 }
 
 /*left*/
-.home {
+section.home {
 	background: url(../images/sh1.jpg) no-repeat center center;
 	background-size: cover;
 }
@@ -23,12 +36,19 @@ section .welcome {
 }
 section .motto {
 	font-size: 2em;
+	font-family: "Courier New", sans-serif;
 }
 
+section.about-me {
+	color: whitesmoke;
+	background-color: rgb(48, 54, 54);
+}
 /*right*/
-.right {
+#right {
 	position: fixed;
+	right: 0px;
 	padding-top: 10px !important;
+	background-color: whitesmoke;
 }
 
 .profile-pic-container .profile-pic {
@@ -37,28 +57,77 @@ section .motto {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .profile-pic-container .name {
-	font-size: 2em;
+	font-size: 1.7em;
 	text-align: center;
 	margin-bottom: 30px;
+	color: rgb(39, 67, 100);
 }
 
 .sh-navbar {
-	padding: 4%;
+	padding: 5%;
 	font-size: 1.1em;
 	border-top: solid;
 	border-width: thin;
 	border-color: #DDD;
+	color: rgb(39, 67, 100);
 }
-
+.sh-navbar:hover {
+	color: whitesmoke;
+	background-color: rgb(39, 67, 100);
+	cursor: pointer;
+}
+.sh-navbar.selected {
+	color: whitesmoke;
+	background-color: rgb(39, 67, 100);
+}
 .sh-navbar.contact-me-navbar {
 	border-bottom: solid;
 	border-width: thin;
 	border-color: #DDD;
+}
+.nav-col .fa.fa-home {
+	margin-left: 1px;
+	margin-right: 2px;
+}
+.nav-col .fa.fa-question-circle {
+	margin-left: 1px;
+	margin-right: 3px;
+}
+.nav-col .fa.fa-code {
+	margin-right: 2px;
+}
+.nav-col .fa.fa-spoon {
+	margin-left: 5px;
+	margin-right: 6px;
+}
+.nav-col .fa.fa-send {
+	margin-right: 3px;
+}
+.selected .pulse {
+    border: 3px solid whitesmoke;
+    border-radius: 30px;
+    height: 18px;
+    width: 18px;
+    position: relative;
+    -webkit-animation: pulsate 1s ease-out;
+    -moz-animation: pulsate 1s ease-out;
+    -0-animation: pulsate 1s ease-out;
+    animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite; 
+    -o-animation-iteration-count: infinite; 
+    animation-iteration-count: infinite; 
+    opacity: 0.0
+}
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
 }
 
 .contact-icons-container {
@@ -71,4 +140,11 @@ section .motto {
 	font-size: 2em;
 	color: #999;
 	padding: 1px;
+	-webkit-transition: color 0.7s ease;
+	-moz-transition: color 0.7s ease;
+	-0-transition: color 0.7s ease;
+	transition: color 0.7s ease;
+}
+.contact-icons-container span.fa:hover {
+	color: rgb(39, 67, 100);
 }

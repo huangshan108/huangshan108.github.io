@@ -6,15 +6,15 @@
   <title>Shan Huang</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome-4.2.0/css/font-awesome.min.css">
-  
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
 	
-	<div class="left col-sm-9 col-md-10 no-padding">
+	<div id="left" class="col-sm-9 col-md-10 no-padding">
 		<section id="home" class="home">
 			<div class="welcome-text-container-offset">
 			<div class="welcome-text-container">
@@ -22,13 +22,62 @@
 					Welcome to Shan Huang's Website
 				</div>
 				<div class="motto">
-					Do Creative Things that Matter
+					<span id="motto"></span>
+					<span id="cursor">_</span>
 				</div>
 			</div>
 		</section>
+
+		<section id="about-me" class="about-me">
+			<div class="conatiner">
+				<div class="title">
+					About Me
+				</div>
+				<div class="detail">
+					<p>
+						I am currently pursing a degree in Electrical Engineering and Computer Science at University of California, Berkeley, with a expected graduation date on December 2015.
+					</p>
+					<p>
+						Related Experience:
+					</p>
+					<p>
+						Software Engineering Internship at Log(n)
+						May 2014 - Dec 2014. San Francisco, CA
+						Worked as a full stack engineer on an online enrollment system for K-12 students (SchoolMint.com):
+						<ul>
+							<li>Worked as a full stack engineer using HTML, CSS, JavaScript, Backbone.js, Underscore.js and Ruby on Rails.</li>
+							<li>Enhanced the professional skills of using Github, Pivotal Tracker and BaseCamp on a big project with other team members.</li>
+							<li>Created backbone collections, modals and views with backend APIs to render pages, tables, and report graphs on front-end.</li>
+							<li>Created backend RESTAPIs for front-end developers.</li>
+							<li>Did UI tests, improvements, and fixes. Created HTML templates some pages. Integrated other javascript libraries into web app.</li>
+						</ul>
+					</p>
+					<p>
+						Computer and Math Courses Tutor at UC Berkeley Engineering Student Services (ESS)
+						March 2014 - Oct 2014. Berkeley, CA
+						<ul>
+							<li>Work with other tutors at UC Berkeley Engineering Student Services Center and tutor computer science and math courses.</li>
+							<li>Tutor for CS61A (Python, Scheme), CS61B (Data Structure, Java), Math 1A (Calculus I) and Math 1B (Calculus II).</li>
+							<li>Duty includes answering homework questions, exam preparations and giving ideas/help to debug programming projects.</li>
+						</ul>
+					</p>
+					<p>
+					Besides of being Engineer, I also enjoy to taste and cook Chinese food and also set the professional Chinese cuisine cook as one of my career goals as well! You can check out my signature dishes profilos *here*.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="projects" class="projects">
+
+		</section>
+		<section id="signature-dishes" class="signature-dishes">
+
+		</section>
+		<section id="contact-me" class="contact-me">
+		</section>
 	</div>
 
-	<div class="right col-sm-3 col-md-2 no-padding pull-right">
+	<div id="right" class="col-sm-3 col-md-2 no-padding pull-right">
 		<div class="profile-pic-container">
 			<img src="images/me.jpg" class="profile-pic" alt="My Profile Picture">
 			<div class="name">
@@ -36,23 +85,28 @@
 			</div>
 		</div>
 		<div class="nav-col">
-			<div class="sh-navbar home-navbar">
-				Home
+			<div class="sh-navbar home-navbar selected">
+				<i class="fa fa-home"></i>
+				<span>Home</span>
 			</div>
 			<div class="sh-navbar about-me-navbar">
-				About Me
+				<i class="fa fa-question-circle"></i>
+				<span>About Me</span>
 			</div>
 			<div class="sh-navbar projects-navbar">
-				Projects
+				<i class="fa fa-code"></i>
+				<span>Projects</span>
 			</div>
 			<div class="sh-navbar signature-dishes-navbar">
-				Signature Dishes
+				<i class="fa fa-spoon"></i>
+				<span>Signature Dishes</span>
 			</div>
 			<div class="sh-navbar contact-me-navbar">
-				Contact Me
+				<i class="fa fa-send"></i>
+				<span>Contact Me</span>
 			</div>
 			<div class="contact-icons-container">
-				<span class="fa fa-envelope-o"></span>
+				<span class="fa fa-envelope"></span>
 				<span class="fa fa-facebook-square"></span>
 				<span class="fa fa-linkedin-square"></span>
 				<span class="fa fa-github-square"></span>
@@ -60,22 +114,6 @@
 			</div>
 		</div>
 	</div>
-	
-
-
-	<section id="about-me" class="about-me">
-
-	</section>
-	<section id="projects" class="projects">
-
-	</section>
-	<section id="signature-dishes" class="signature-dishes">
-
-	</section>
-	<section id="contact-me" class="contact-me">
-	</section>
-
-
 
   <script src="js/jquery-2.1.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
