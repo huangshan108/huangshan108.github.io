@@ -1,0 +1,74 @@
+/*General Style*/
+div, section {
+	padding: 0px;
+}
+
+.right.no-padding, .left.no-padding {
+	padding: 0px;
+}
+
+/*left*/
+.home {
+	background: url(../images/sh1.jpg) no-repeat center center;
+	background-size: cover;
+}
+section .welcome-text-container {
+	padding: 10px 30px 10px 30px;
+	background: rgba(0,0,0, 0.3);
+	color: rgba(255,255,255, 0.9);
+	font-weight: 200;
+}
+section .welcome {
+	font-size: 3em;
+}
+section .motto {
+	font-size: 2em;
+}
+
+/*right*/
+.right {
+	position: fixed;
+	padding-top: 10px !important;
+}
+
+.profile-pic-container .profile-pic {
+	border-radius: 50%;
+	max-width: 60%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.profile-pic-container .name {
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.sh-navbar {
+	padding: 4%;
+	font-size: 1.1em;
+	border-top: solid;
+	border-width: thin;
+	border-color: #DDD;
+}
+
+.sh-navbar.contact-me-navbar {
+	border-bottom: solid;
+	border-width: thin;
+	border-color: #DDD;
+}
+
+.contact-icons-container {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.contact-icons-container span.fa {
+	font-size: 2em;
+	color: #999;
+	padding: 1px;
+}
