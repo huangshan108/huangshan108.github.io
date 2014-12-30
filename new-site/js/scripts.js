@@ -1,8 +1,12 @@
 // on load
 $(document).ready(function() {
-  setHeights();
-  type();
-  setInterval('cursorAnimation()', 800);
+	$(".sh-navbar").removeClass("selected");
+	$(".home").addClass("selected");
+	$("section").addClass("display-none");
+	$("#home").removeClass("display-none");
+	setHeights();
+	type();
+	setInterval('cursorAnimation()', 800);
 });
 
 // on resize
@@ -22,24 +26,35 @@ $(".about-me-navbar").click(function() {
 	$(".about-me-navbar").addClass("selected");
 	$("section").addClass("display-none");
 	$("#about-me").removeClass("display-none");
+	heightAdjustment("#about-me");
 });
 $(".projects-navbar").click(function() {
 	$(".sh-navbar").removeClass("selected");
 	$(".projects-navbar").addClass("selected");
 	$("section").addClass("display-none");
 	$("#projects").removeClass("display-none");
+	heightAdjustment("#projects");
 });
 $(".signature-dishes-navbar").click(function() {
 	$(".sh-navbar").removeClass("selected");
 	$(".signature-dishes-navbar").addClass("selected");
 	$("section").addClass("display-none");
 	$("#signature-dishes").removeClass("display-none");
+	heightAdjustment("#signature-dishes");
+});
+$("#find-dishes").click(function() {
+	$(".sh-navbar").removeClass("selected");
+	$(".signature-dishes-navbar").addClass("selected");
+	$("section").addClass("display-none");
+	$("#signature-dishes").removeClass("display-none");
+	heightAdjustment("#signature-dishes");
 });
 $(".contact-me-navbar").click(function() {
 	$(".sh-navbar").removeClass("selected");
 	$(".contact-me-navbar").addClass("selected");
 	$("section").addClass("display-none");
 	$("#contact-me").removeClass("display-none");
+	heightAdjustment("#contact-me");
 });
 
 
@@ -54,6 +69,14 @@ setHeights = function() {
   $("section .welcome-text-container-offset").css("padding-top", (windowHeight + homepagePadding) / 2 );
 };
 
+heightAdjustment = function(selecter) {
+	var sectionHeight = $(selecter).height();
+	var windowHeight = $(window).height();
+	if (sectionHeight < windowHeight) {
+		$(selecter).height(windowHeight);
+	};
+}
+ 
 
 var str = "Do Creative Things That Matter",
     i = 0,

@@ -9,6 +9,11 @@ div, section {
 .display-none {
 	display: none;
 }
+section {
+	font-family: "Lato Thin", sans-serif;
+	color: whitesmoke;
+	background-color: rgb(39, 40, 34);
+}
 
 /* Fonts*/
 @font-face {
@@ -38,10 +43,25 @@ section .motto {
 	font-size: 2em;
 	font-family: "Courier New", sans-serif;
 }
-
-section.about-me {
-	color: whitesmoke;
-	background-color: rgb(48, 54, 54);
+section .section-container {
+	padding: 7%;
+}
+section .title {
+	padding: 5px 5px 15px 5px;
+	font-size: 3em;
+	color: white;
+}
+section .detail {
+	padding: 5px;
+	line-height: 1.5;
+	font-size: 1.1em;
+	color: rgba(255,255,255,0.7);
+}
+section.about-me #find-dishes {
+	text-decoration: underline;
+}
+section.about-me #find-dishes:hover {
+	cursor: pointer;
 }
 /*right*/
 #right {
