@@ -7,6 +7,8 @@ $(document).ready(function() {
 	setHeights();
 	type();
 	setInterval('cursorAnimation()', 800);
+	$('#sent').hide();
+	makeCenter("#sent");
 });
 
 // on resize
@@ -132,3 +134,10 @@ function cursorAnimation() {
         opacity: 1
     }, 'fast', 'linear');
 }
+
+function makeCenter(selecter) {
+	$target = $(selecter);
+    $target.css("position","fixed");
+    $target.css("top", "10%");
+    $target.css("left", Math.max(0, (($("#left").width() - 252 ) / 2)));
+};
