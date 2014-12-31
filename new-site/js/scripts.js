@@ -130,9 +130,9 @@ function type() {
 function cursorAnimation() {
     $('#cursor').animate({
         opacity: 0
-    }, 'fast', 'linear').animate({
+    }, 'fast', 'easeInExpo').animate({
         opacity: 1
-    }, 'fast', 'linear');
+    }, 'fast', 'easeInExpo');
 }
 
 function makeCenter(selecter) {
