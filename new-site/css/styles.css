@@ -157,6 +157,7 @@ section .sh-thumbnail.dv-router {
 }
 .thumbnail-detail-container .project-detail {
 	padding: 10px;
+	font-size: 1.1em;
 }
 /*right*/
 #right {
