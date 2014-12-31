@@ -19,7 +19,7 @@ $(window).resize(function() {
   thumbnailWidthAdjustment("#signature-dishes");
 });
 
-var pageTransitionInterval = 200;
+var pageTransitionInterval = 400;
 
 // nav clicker hander
 $(".home-navbar").click(function() {
@@ -63,6 +63,15 @@ $("section .sh-thumbnail").hover(
 	}
 );
 
+$("li.sh-thumbnail").click(function() {
+	var thumbnailName = $(this).attr("name");
+	$(".thumbnail-detail").height($(window).height())
+						  .width($(window).width());
+	$("#" + thumbnailName).fadeIn(500);
+});
+$(".thumbnail-detail").click(function() {
+	$(this).fadeOut(500);
+});
 handlePageTransition = function(selecter) {
 	$(".sh-navbar").removeClass("selected");
 	$("." + selecter + "-navbar").addClass("selected");

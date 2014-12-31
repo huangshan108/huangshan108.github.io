@@ -121,7 +121,43 @@ section .sh-thumbnail.dv-router {
 	background: url(../images/postman.png) no-repeat center center;
 	background-size: cover;
 }
-
+.thumbnail-detail {
+	display: none;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 100;
+	color: rgba(255,255,255,0.9);
+	background-color: rgba(0,0,0,0.8);
+}
+.thumbnail-detail-container {
+	padding: 8%;
+}
+.thumbnail-detail-container .project-title span {
+	font-size: 2.5em;
+	padding: 10px;
+	margin-right: 20px;
+}
+.thumbnail-detail-container a {
+	color: white;
+	font-size: 1.2em;
+	border-radius: 2px;
+	padding: 1px 4px 1px 4px;
+	vertical-align: text-bottom;
+	margin-right: 5px;
+}
+.thumbnail-detail-container a.repo {
+	background-color: rgba(0, 204, 0, 0.8);
+}
+.thumbnail-detail-container a.demo {
+	background-color: rgba(255, 153, 0, 0.8);
+}
+.thumbnail-detail-container a:hover {
+	text-decoration: none;
+}
+.thumbnail-detail-container .project-detail {
+	padding: 10px;
+}
 /*right*/
 #right {
 	position: fixed;
