@@ -1,7 +1,7 @@
 // on load
 $(document).ready(function() {
 	$(".sh-navbar").removeClass("selected");
-	$(".home").addClass("selected");
+	$(".home-navbar").addClass("selected");
 	$("section").addClass("display-none");
 	$("#home").removeClass("display-none");
 	setHeights();
@@ -22,7 +22,7 @@ $(window).resize(function() {
 // nav clicker hander
 $(".home-navbar").click(function() {
 	$(".sh-navbar").removeClass("selected");
-	$(".home").addClass("selected");
+	$(".home-navbar").addClass("selected");
 	$("section").addClass("display-none");
 	$("#home").removeClass("display-none");
 });

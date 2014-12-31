@@ -146,24 +146,37 @@ section .sh-thumbnail.dv-router {
 	color: rgb(39, 67, 100);
 }
 
-.sh-navbar {
-	padding: 5%;
+#right .sh-navbar {
+	padding: 0;
 	font-size: 1.1em;
 	border-top: solid;
 	border-width: thin;
 	border-color: #DDD;
 	color: rgb(39, 67, 100);
 }
-.sh-navbar:hover {
+#right .sh-navbar .nav-transform {
+	padding: 5%;
+	-webkit-transition: -webkit-transform 0.3s ease;
+	-moz-transition: -moz-transform 0.3s ease;
+	-o-transition: -o-transform 0.3s ease;
+	transition: transform 0.3s ease;
+}
+#right .sh-navbar:hover {
 	color: whitesmoke;
 	background-color: rgb(39, 67, 100);
 	cursor: pointer;
 }
-.sh-navbar.selected {
+#right .sh-navbar .nav-transform:hover {
+	-webkit-transform: translate(10px, 0);
+	-moz-transform: translate(10px, 0);
+	-o-transform: translate(10px, 0);
+	transform: translate(10px, 0);
+}
+#right .sh-navbar.selected {
 	color: whitesmoke;
 	background-color: rgb(39, 67, 100);
 }
-.sh-navbar.contact-me-navbar {
+#right .sh-navbar.contact-me-navbar {
 	border-bottom: solid;
 	border-width: thin;
 	border-color: #DDD;
@@ -202,13 +215,13 @@ section .sh-thumbnail.dv-router {
     animation-iteration-count: infinite; 
     opacity: 0.0
 }
-@-webkit-keyframes pulsate {
-    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 1.0;}
-    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
-}
-
 .contact-icons-container {
+	position: absolute;
+	bottom: 30px;
+	right: 10px;
+}
+.sh-footer {
+	font-size: 0.7em;
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
@@ -218,10 +231,10 @@ section .sh-thumbnail.dv-router {
 	font-size: 2em;
 	color: #999;
 	padding: 1px;
-	-webkit-transition: color 0.7s ease;
-	-moz-transition: color 0.7s ease;
-	-o-transition: color 0.7s ease;
-	transition: color 0.7s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 .contact-icons-container span.fa:hover {
 	color: rgb(39, 67, 100);
@@ -281,10 +294,10 @@ form .btn:hover {
 	-o-box-shadow: none;
 	box-shadow: none;
 	background-color: rgba(255, 255, 255, 0.7);
-	-webkit-transition: color 0.7s ease;
-	-moz-transition: color 0.7s ease;
-	-o-transition: color 0.7s ease;
-	transition: color 0.7s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 .form-control:-webkit-input-placeholder,
 .form-control:-moz-placeholder,
