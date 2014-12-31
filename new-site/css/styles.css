@@ -5,20 +5,17 @@ body {
 div, section {
 	padding: 0px;
 }
-
 #right.no-padding, #left.no-padding {
 	padding: 0px;
 }
-.display-none {
-	display: none;
-}
+.fade-overlay, 
 section {
 	font-family: "Lato Thin", sans-serif;
 	color: whitesmoke;
-	background: -webkit-linear-gradient(left top, rgba(39, 40, 34, 0.8), rgba(39, 40, 34, 1)); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(bottom right, rgba(39, 40, 34, 0.8), rgba(39, 40, 34, 1)); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(bottom right, rgba(39, 40, 34, 0.8), rgba(39, 40, 34, 1)); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(to bottom right, rgba(39, 40, 34, 0.8), rgba(39, 40, 34, 1)); /* Standard syntax */
+	background: -webkit-linear-gradient(left top, rgba(65, 66, 57, 1), rgba(39, 40, 34, 1));
+	background: -o-linear-gradient(bottom right, rgba(65, 66, 57, 1), rgba(39, 40, 34, 1));
+	background: -moz-linear-gradient(bottom right, rgba(65, 66, 57, 1), rgba(39, 40, 34, 1));
+	background: linear-gradient(to bottom right, rgba(65, 66, 57, 1), rgba(39, 40, 34, 1));
 }
 
 /* Fonts*/
